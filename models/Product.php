@@ -1,5 +1,6 @@
 <?php
 
+include_once ROOT.'/components/Db.php';
 
 class Product
 {
@@ -71,8 +72,66 @@ class Product
             $result = $db->query('SELECT * FROM product WHERE id='. $id);
             $result->setFetchMode(PDO::FETCH_ASSOC);
 
-            return $result->fetch();
+            return $result->fetch(); 
         }
     }
 
+    public static function getProductsList()
+    {
+        $db = Db::getConnection();
+
+        $result = $db->query('SELECT id, name, price, code FROM product ORDER BY id ASC');
+        $productsList = array();
+        $i = 0;
+        while ($row = $result->fetch()) {
+            $productsList[$i]['id'] = $row['id'];
+            $productsList[$i]['name'] = $row['name'];
+            $productsList[$i]['code'] = $row['code'];
+            $productsList[$i]['price'] = $row['price'];
+            $i++;
+        }
+
+        return $productsList;
+    }
+
+    public static function deleteProductById($id)
+    {
+        $db = Db::getConnection();
+
+        $sql = 'DELETE FROM product WHERE id = :id';
+
+        $result = $db->prepare($sql);
+        $result->bindParam(':id', $id, PDO::PARAM_INT);
+        return $result->execute();
+    }
+
+    public static function createProduct($options)
+    {
+        $db = Db::getConnection();
+
+        $sql = 'INSERT INTO product '
+                . '(name, category_id, code, price, avaliabillity, brand,'
+                . 'image, description, is_new, is_recommended, status)'
+                . 'VALUES '
+                . '(:name, :category_id, :code, :price, :avaliabillity, :brand,'
+                . ':image, :description, :is_new, :is_recommended, :status)';
+
+        $result = $db->prepare($sql);
+        $result->bindParam(':name', $options['name'], PDO::PARAM_STR);
+        $result->bindParam(':category_id', $options['category_id'], PDO::PARAM_INT);
+        $result->bindParam(':code', $options['code'], PDO::PARAM_STR);
+        $result->bindParam(':price', $options['price'], PDO::PARAM_STR);
+        $result->bindParam(':avaliabillity', $options['avaliabillity'], PDO::PARAM_INT);
+        $result->bindParam(':brand', $options['brand'], PDO::PARAM_STR);
+        $result->bindParam(':image', $options['image'], PDO::PARAM_STR);
+        $result->bindParam(':description', $options['description'], PDO::PARAM_STR);
+        $result->bindParam(':is_new', $options['is_new'], PDO::PARAM_INT);
+        $result->bindParam(':is_recommended', $options['is_recommended'], PDO::PARAM_INT);
+        $result->bindParam(':status', $options['status'], PDO::PARAM_INT);
+        if ($result->execute()) {
+            return $db->lastInsertId();
+        }
+        
+        return 0;
+    }
 }
