@@ -46,14 +46,7 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="logo pull-left">
-                                <a href="index.html"><img src="/template/images/home/logo.png" alt="" /></a>
-                            </div>
-                        </div>
-                        <div class="col-sm-8">
-                            <div class="shop-menu pull-right">
-                                <ul class="nav navbar-nav">                                    
-                                    <li><a href="#"><i class="fa fa-shopping-cart"></i> Корзина</a></li>
-                                </ul>
+                                <a href="/"><img src="/template/images/home/logo.png" alt="" /></a>
                             </div>
                         </div>
                     </div>
@@ -78,7 +71,6 @@
                                     <li class="dropdown"><a href="#">Магазин<i class="fa fa-angle-down"></i></a>
                                         <ul role="menu" class="sub-menu">
                                             <li><a href="/catalog/">Каталог товаров</a></li>
-                                            <li><a href="/cart/">Корзина</a></li> 
                                         </ul>
                                     </li> 
                                     <li><a href="/about/">О магазине</a></li>
