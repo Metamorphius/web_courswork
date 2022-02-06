@@ -4,6 +4,9 @@ return array(
 
     'catalog' => 'catalog/index',
     'category/([0-9]+)' => 'catalog/category/$1',
+
+    'about' => 'about/index',
+    'author' => 'author/index',
     
     'admin/product/create' => 'adminProduct/create',
     'admin/product/update/([0-9]+)' => 'adminProduct/update/$1',

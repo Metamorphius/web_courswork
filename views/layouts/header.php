@@ -74,7 +74,7 @@
                                         </ul>
                                     </li> 
                                     <li><a href="/about/">О магазине</a></li>
-                                    <li><a href="/contacts/">Контакты</a></li>
+                                    <li><a href="/author/">Автор</a></li>
                                 </ul>
                             </div>
                         </div>
