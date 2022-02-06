@@ -46,7 +46,14 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="logo pull-left">
-                                <a href="/"><img src="/template/images/home/logo.png" alt="" /></a>
+                                <a href="/"><img src="/template/images/home/logo-2.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="shop-menu pull-right">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="/admin"> Aдмин </a></li>  
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -68,11 +75,6 @@
                             <div class="mainmenu pull-left">
                                 <ul class="nav navbar-nav collapse navbar-collapse">
                                     <li><a href="/">Главная</a></li>
-                                    <li class="dropdown"><a href="#">Магазин<i class="fa fa-angle-down"></i></a>
-                                        <ul role="menu" class="sub-menu">
-                                            <li><a href="/catalog/">Каталог товаров</a></li>
-                                        </ul>
-                                    </li> 
                                     <li><a href="/about/">О магазине</a></li>
                                     <li><a href="/author/">Автор</a></li>
                                 </ul>

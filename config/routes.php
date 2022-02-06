@@ -8,6 +8,8 @@ return array(
     'about' => 'about/index',
     'author' => 'author/index',
     
+    'user/login' => 'user/login',
+
     'admin/product/create' => 'adminProduct/create',
     'admin/product/update/([0-9]+)' => 'adminProduct/update/$1',
     'admin/product/delete/([0-9]+)' => 'adminProduct/delete/$1',

@@ -30,11 +30,6 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="contactinfo">
-                                    <h5>
-                                        <a href="/admin"><i class="fa fa-edit"></i> Админпанель</a>
-                                    </h5>
-                                </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="social-icons pull-right">
