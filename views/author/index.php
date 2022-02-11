@@ -1,10 +1,5 @@
 <?php include ROOT.'/views/layouts/header.php'; ?>
 
-<style>
-    #author {
-        margin-left: 15%;
-    }
-</style>
 
 <section>
     <div class="container">
@@ -31,10 +26,5 @@
         </div>
     </div>
 </section>
-
-<?php for ($i=0; $i < 7; $i++) { ?>
-    <br>
-<?php } ?>
-
 
 <?php include ROOT.'/views/layouts/footer.php'; ?>

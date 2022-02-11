@@ -1,12 +1,5 @@
 <?php include ROOT.'/views/layouts/header.php'; ?>
 
-<style>
-    #map {
-        margin-left: 15%;
-    }
-
-</style>
-
 <section>
     <div class="container">
         <div class="row">
@@ -39,9 +32,5 @@
         </div>
     </div>
 </section>
-
-<?php for ($i=0; $i < 5; $i++) { ?>
-    <br>
-<?php } ?>
 
 <?php include ROOT.'/views/layouts/footer.php'; ?>

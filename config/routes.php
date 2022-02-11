@@ -15,6 +15,11 @@ return array(
     'admin/product/delete/([0-9]+)' => 'adminProduct/delete/$1',
     'admin/product' => 'adminProduct/index',
 
+    'admin/redactor/main' => 'adminRedactorMain/main',
+    'admin/redactor/about' => 'adminRedactorAbout/about',
+    'admin/redactor/author' => 'adminRedactorAuthor/author',
+    'admin/redactor' => 'adminRedactor/index',
+
     'admin' => 'admin/index',
 
     '' => 'site/index', 

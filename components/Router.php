@@ -19,7 +19,6 @@ class Router
 
     public function run()
     {
-        // Получаем строку запроса
         $uri = $this->getURI();
 
         // Проверяем наличие такого маршрута в routes.php

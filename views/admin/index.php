@@ -16,6 +16,7 @@
             
             <ul>
                 <li><a href="/admin/product">Управление товарами</a></li>
+                <li><a href="/admin/redactor">Редактор HTML</a></li>
             </ul>
             
         </div>

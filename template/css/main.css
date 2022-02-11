@@ -344,6 +344,9 @@ ul.sub-menu {
 /*************************
 *******Footer CSS******
 **************************/
+section {
+  min-height: calc(100vh - 240px);
+}
 
 #footer {
   background: #F0F0E9;
@@ -567,6 +570,13 @@ ul.sub-menu {
 ******* Home ******
 **************************/
 
+#map {
+    margin-left: 15%;
+}
+
+#author {
+  margin-left: 15%;
+}
 
 #slider {
   padding-bottom: 45px;

@@ -13,4 +13,8 @@ class AdminController
         return true;
     }
 
+    public function actionRedactor()
+    {
+        
+    }
 }
